@@ -36,29 +36,32 @@
         <section id="projetos" class="projects">
             <h2>Meus Projetos</h2>
             <div class="projects-container">
-                <!-- Projeto 1 -->
-                <a href="https://anajulia-niver.vercel.app/" target="_blank" class="project-card">
-                    <img src="/img/projects/anajuliasite.jpeg" alt="anaju_project" />
+                <div class="project-card" data-title="Ana Júlia - 1 Ano"
+                    data-desc="Site comemorativo feito com React e Tailwind."
+                    data-link="https://anajulia-niver.vercel.app/"
+                    data-repo="https://github.com/1alvaropaiva/anajulia-niver">
+                    <img src="/img/projects/anaju-site.png" alt="anaju_project" />
                     <div class="overlay">Ana Júlia - 1 Ano</div>
-                </a>
+                </div>
 
-                <!-- Projeto 2 -->
-                <a href="https://github.com/1alvaropaiva/SistemaDePedidos" target="_blank" class="project-card">
+                <div class="project-card" data-title="Sistema de Pedidos"
+                    data-desc="Aplicação fullstack para gerenciamento de pedidos." data-link=""
+                    data-repo="https://github.com/1alvaropaiva/SistemaDePedidos">
                     <img src="/img/projects/sistemapedidos.png" alt="pedidos_project" />
                     <div class="overlay">Sistema de Pedidos</div>
-                </a>
+                </div>
 
-                <!-- Projeto 3 -->
-                <a href="https://github.com/1alvaropaiva/todolist" target="_blank" class="project-card">
-                    <img src="/img/projects/todos.png" alt="anaju_project" />
-                    <div class="overlay">TODO list</div>
-                </a>
+                <div class="project-card" data-title="AvBank Frontend" data-desc="Frontend do AvBank"
+                    data-link="" data-repo="https://github.com/1alvaropaiva/todolist">
+                    <img src="/img/projects/avbank-front.jpeg" alt="avbank-front" />
+                    <div class="overlay">AvBank Frontend</div>
+                </div>
 
-                <!-- Projeto 4 -->
-                <a href="" target="_blank" class="project-card">
-                    <img src="/img/projects/embreve.jpeg" alt="soon" />
-                    <div class="overlay">Em Breve!</div>
-                </a>
+                <div class="project-card" data-title="AvBank Backend" data-desc="Backend do AvBank"
+                    data-link="" data-repo="">
+                    <img src="/img/projects/avbank-back.jpeg" alt="avbank-back" />
+                    <div class="overlay">AvBank Backend</div>
+                </div>
             </div>
         </section>
 
@@ -95,7 +98,6 @@
                     <img src="img/icons/Bootstrap.svg" alt="Bootstrap" />
                     <p>Bootstrap</p>
                 </div>
-
 
                 <div class="tech-card">
                     <img src="img/icons/Tailwind.svg" alt="tailwind" />
@@ -161,6 +163,19 @@
             </form>
         </section>
     </main>
+
+    <!-- Modal de Projetos -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+            <div class="modal-links">
+                <a id="modal-demo" href="#" target="_blank" class="btn-link"></a>
+                <a id="modal-repo" href="#" target="_blank" class="btn-repo"></a>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <p>&copy; Alvaro Paiva, 2025</p>
